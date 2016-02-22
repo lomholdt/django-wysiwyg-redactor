@@ -82,6 +82,8 @@ or use custom parametrs:
         allow_file_upload=True,
         allow_image_upload=True
     )
+    
+When outputting the form in a template, it is important to add the form media by calling `{{ form.media() }}` otherwise the menubar will not show up. 
 
 Using only in Django Admin
 --------------------------
